@@ -86,6 +86,30 @@ npm run build
 npm start
 ```
 
+### Deploying to Vercel
+
+This project includes a `vercel.json` configuration file for easy deployment to Vercel.
+
+**Option 1: Using vercel.json (Recommended)**
+1. Push your code to GitHub
+2. Connect your repository to [Vercel](https://vercel.com)
+3. Keep the Root Directory as the repository root (default)
+4. The vercel.json will handle navigating to the my-app directory
+5. Click "Deploy" and your site will be live!
+
+**Option 2: Setting Root Directory manually**
+1. Push your code to GitHub
+2. Connect your repository to [Vercel](https://vercel.com)
+3. During project setup, set the **Root Directory** to `my-app`
+4. Vercel will automatically detect Next.js and configure the build settings
+5. Click "Deploy" and your site will be live!
+
+Alternatively, you can deploy directly using the Vercel CLI:
+```bash
+npm i -g vercel
+vercel
+```
+
 ## 📁 Project Structure
 
 ```
