@@ -88,16 +88,8 @@ npm start
 
 ### Deploying to Vercel
 
-This project includes a `vercel.json` configuration file for easy deployment to Vercel.
+The Next.js application is located in the `my-app` directory.
 
-**Option 1: Using vercel.json (Recommended)**
-1. Push your code to GitHub
-2. Connect your repository to [Vercel](https://vercel.com)
-3. Keep the Root Directory as the repository root (default)
-4. The vercel.json will handle navigating to the my-app directory
-5. Click "Deploy" and your site will be live!
-
-**Option 2: Setting Root Directory manually**
 1. Push your code to GitHub
 2. Connect your repository to [Vercel](https://vercel.com)
 3. During project setup, set the **Root Directory** to `my-app`
@@ -106,6 +98,7 @@ This project includes a `vercel.json` configuration file for easy deployment to 
 
 Alternatively, you can deploy directly using the Vercel CLI:
 ```bash
+cd my-app
 npm i -g vercel
 vercel
 ```
@@ -127,10 +120,10 @@ Butwal-Hacks-/
 │   │   └── footer.tsx      # Footer
 │   ├── lib/
 │   │   └── utils.ts    # Utility functions
-│   └── public/
-│       └── logo.png    # Logo for Next.js
+│   ├── public/
+│   │   └── logo.png    # Logo for Next.js
+│   └── vercel.json     # Vercel deployment config
 ├── logo.png            # Organization logo
-├── vercel.json         # Vercel deployment config
 ├── LICENSE
 └── README.md
 ```
