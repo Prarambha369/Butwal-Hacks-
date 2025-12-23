@@ -114,10 +114,6 @@ vercel
 
 ```
 Butwal-Hacks-/
-├── index.html          # Legacy static page
-├── styles.css          # Legacy styles
-├── logo.png            # Organization logo
-├── logo.jpg            # Original logo
 ├── my-app/             # Next.js application
 │   ├── app/
 │   │   ├── layout.tsx  # Root layout
@@ -133,6 +129,9 @@ Butwal-Hacks-/
 │   │   └── utils.ts    # Utility functions
 │   └── public/
 │       └── logo.png    # Logo for Next.js
+├── logo.png            # Organization logo
+├── vercel.json         # Vercel deployment config
+├── LICENSE
 └── README.md
 ```
 
